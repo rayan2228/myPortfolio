@@ -14,6 +14,7 @@ export default {
       },
       colors: {
         'primary': '#5E3BEE',
+        'text-primary': '#282938',
       },
       boxShadow: {
         "nav-shadow": "0px 5.333333492279053px 80px 0px rgba(0, 0, 0, 0.10)"
