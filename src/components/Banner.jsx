@@ -5,7 +5,7 @@ import Image from "./layouts/Image";
 import banner from "../assets/banner.png";
 const Banner = () => {
   return (
-    <section className="py-[133px]">
+    <section className="py-[133px] bg-[#F5FCFF]">
       <Container>
         <Flex className="lg:flex-row flex-col px-2 container-:px-0">
           <div className="container:w-1/2 w-full font-rob self-center order-1 lg:mt-14 container:mt-0 mt-8">
