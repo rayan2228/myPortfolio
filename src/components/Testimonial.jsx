@@ -8,13 +8,14 @@ import avatar2 from "../assets/avatar2.png";
 import avatar3 from "../assets/avatar3.png";
 const Testimonial = () => {
   return (
-    <section className="mt-40 bg-[#F5FCFF] py-[150px]">
+    <section className="mt-40 bg-[#F5FCFF] py-[150px] px-2 container:px-0">
       <Container>
         <Title
           smallTitle={"Clients Feedback"}
           title={"Customer testimonials"}
+          className={"text-5xl my-5"}
         />
-        <Flex className={"justify-between mt-[106px]"}>
+        <Flex className={"justify-between mt-[106px] lg:flex-row flex-col lg:gap-y-0 gap-y-4 "}>
           <Reviews
             img={avatar1}
             review={

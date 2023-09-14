@@ -9,7 +9,7 @@ import project2 from "../assets/project(2).png";
 import project3 from "../assets/project(3).png";
 const Portfolio = () => {
   return (
-    <section className="mt-[208px] px-2">
+    <section className="mt-[208px] px-2 container:px-2">
       <Container>
         <Flex
           className={"lg:items-center justify-between lg:flex-row flex-col "}
