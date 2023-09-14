@@ -3,6 +3,7 @@ import Banner from "./components/Banner";
 import Expertise from "./components/Expertise";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Expertise/>
       <About/>
       <Portfolio/>
+      <Testimonial/>
     </>
   );
 }
