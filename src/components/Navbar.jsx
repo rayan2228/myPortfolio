@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import { FaBars } from "react-icons/fa";
+import NavLinks from "./layouts/NavLinks";
 const Navbar = () => {
   let [showMenu, setShowMenu] = useState(true);
 
@@ -25,42 +26,7 @@ const Navbar = () => {
               <img src={logo} alt="" />
             </picture>
           </div>
-          {showMenu && (
-            <ul className="flex flex-col lg:flex-row absolute lg:relative top-[58px] sm:top-[82px] lg:top-0 lg:w-6/12  justify-center lg:gap-x-11 gap-y-6 lg:gap-y-0 lg:p-0 p-4 lg:items-center  font-rob text-xl font-normal capitalize w-full lg:bg-transparent bg-[#0e0e0e] text-white lg:text-black ">
-              <li>
-                <a
-                  href=""
-                  className="hover:text-primary transition duration-300 w-full inline-block lg:inline lg:w-auto"
-                >
-                  home
-                </a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  className="hover:text-primary transition duration-300 w-full inline-block lg:inline lg:w-auto"
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  className="hover:text-primary transition duration-300 w-full inline-block lg:inline lg:w-auto"
-                >
-                  About me
-                </a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  className="hover:text-primary transition duration-300 w-full inline-block lg:inline lg:w-auto"
-                >
-                  Testimonials
-                </a>
-              </li>
-            </ul>
-          )}
+          {showMenu && <NavLinks className={"lg:w-6/12"} />}
           {showMenu && (
             <div className="absolute lg:relative top-[280px] sm:top-[300px] lg:top-0 font-rob text-xl font-normal capitalize border-2 border-primary rounded-md w-full lg:w-auto ">
               <a
